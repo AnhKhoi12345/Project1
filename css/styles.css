@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.page{
+    display: flex;
+    margin:50px auto;
+    /* flex: 0 0 220px; */
+    width: 90%;
+    height:900px;
+    border: 1px solid black;
+    flex-wrap: wrap;
+}
+/* .header{
+    border: 1px solid #F09A9D;
+    width: 70%;
+} */
+.nav-bar{
+    padding: 0 40px 0 15px;
+    display: flex;
+    position: fixed;
+    border: 1px solid black;
+    justify-content: space-between;
+    width: 90%;
+    height:100px;
+    align-items: center;
+    background-color: white;
+}
+#navbar-toggle{
+    height: 50px;
+    /* size: 100px; */
+    border: 0;
+    background: none;
+}
+#toggle-icon{
+
+}
+.nav-logo{
+    background: url(http://demo.rommar.in.ua/novanoid/novanoid-1/img/logo-light.png) no-repeat ;
+    width: 80px;
+    height: 27px;
+    /* border: 1px solid black; */
+    filter: invert(100%);
+}
+.nav-list{
+    list-style: none;
+    border: 1px solid black;
+}
+@media only screen and (max-width: 400px) {
+    body {
+      background-color: #F09A9D; 
+    }
+  }
+@media only screen and (min-width: 401px) and (max-width: 670px) { 
+    body {
+        background-color: indianred; 
+    }
+}
+@media only screen and (min-width: 671px) and (max-width: 767px) { /*pic in oiur work change to 2 column instead of 1*/
+    body {
+        background-color: tomato; 
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) { /*nav bar visible, item no longer stack 1 column, now 2 row*/
+    body {
+        background-color: lightyellow; 
+    }
+}
+@media only screen and (min-width: 993px) and (max-width: 1200px) { /*pic in our work change to 3 column*/
+    body {
+        background-color: lightgreen; 
+    }
+}
+@media only screen and (min-width: 1201px) { /* wide pic in our work expand*/
+    body {
+        background-color: lightblue; 
+    }
+}
