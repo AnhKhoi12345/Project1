@@ -6,27 +6,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Novanoid</title>
     <link rel='stylesheet' href='../css/styles.css'/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Yanone+Kaffeesatz:wght@300;400&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ff4c9e584d.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class = "page">
         <header class="header">
-            <nav class="nav-bar">
-                <div class ="nav-logo"></div>
-                <button type ="button" id ="navbar-toggle">
-                    <i class="fa-solid fa-bars fa-xl" id="toggle-icon"></i>
-                </button>
-                <!-- <ul class="nav-list">
-                    <li>HOME</li>
-                    <li>WORK</li>
-                    <li>SERVICES</li>
-                    <li>TEAM</li>
-                    <li>PRICES</li>
-                    <li>BLOG</li>
-                    <li>CONTACTS</li>
-                </ul> -->
-            </nav>
+            <div class="header-container">
+                <nav class="nav-bar">
+                    <a class ="nav-logo" href="index.html"></a>
+                    <button id ="navbar-toggle" onclick="menuBtn()">
+                        <i class="fa-solid fa-bars fa-xl" id="toggle-icon"></i>
+                    </button>
+                    <div class = "nav-list-container" id="nav-list-container">
+                        <ul class="nav-list">
+                            <li class = "nav-list-item nav-list-item1"><a href="#">HOME</a></li>
+                            <li class = "nav-list-item nav-list-item2"><a href="#">WORK</a></li>
+                            <li class = "nav-list-item nav-list-item3"><a href="#">SERVICES</a></li>
+                            <li class = "nav-list-item nav-list-item4"><a href="#">TEAM</a></li>
+                            <li class = "nav-list-item nav-list-item5"><a href="#">PRICES</a></li>
+                            <li class = "nav-list-item nav-list-item6"><a href="#">BLOG</a></li>
+                            <li class = "nav-list-item nav-list-item7"><a href="#">CONTACTS</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <h1>NOVANOID</h1>
+                <span>simple minimal.</span>
+            </div>
         </header>
+        <div class="main-content">
+            <div class="feature-container">
+                <div class="feature">
+                    <i class="fa-solid fa-leaf fa-lg" aria-hidden="true"></i>
+                    <h3>CLEAN THEMES</h3>
+                    <div>
+                        Nulla fringilla urna ac urna volutpat, quis congue massa dignissim. 
+                        Suspendisse quis orci id dolor vehicula porta quis in dolor. 
+                        Phasellus volutpat metus.
+                    </div>
+                </div>
+                <div class="feature">
+                    <i class="fa-solid fa-desktop fa-lg" aria-hidden="true"></i>
+                    <h3>FULLY RESPONSIVE</h3>
+                    <div>
+                        Ut magna diam, placerat ac diam et, ornare volutpat libero. 
+                        Curabitur erat nisl, sollicitudin sit amet rhoncus interdum, 
+                        adipiscing aliquet est.
+                    </div>
+                </div>
+                <div class="feature">
+                    <i class="fa-solid fa-eye fa-lg" aria-hidden="true"></i>
+                    <h3>PIXELS PERFECT</h3>
+                    <div>
+                        Phasellus eget massa quam. Cras mi purus, accumsan id pretium sed, 
+                        faucibus quis diam. Maecenas aliquet, lacus a porttitor porta, sapien.
+                    </div>
+                </div>
+                <div class="feature">
+                    <i class="fa-solid fa-font fa-lg" aria-hidden="true"></i>
+                    <h3>GOOGLE FONTS</h3>
+                    <div>
+                        Etiam sollicitudin tempus quam, at lacinia urna rutrum sed. 
+                        Integer quis arcu quis metus sagittis feugiat. 
+                        Nulla facilisi. Integer molestie nec justo in convallis.
+                    </div>
+                </div>
+                <div class="feature">
+                    <i class="fa-solid fa-code-fork fa-lg" aria-hidden="true"></i>
+                    <h3>STRUCTURES CODE</h3>
+                    <div>
+                        Suspendisse nec lacus id urna mollis convallis. 
+                        Sed risus massa, sodales sed porta eu, elementum ac magna. 
+                        Phasellus et suscipit ipsum.
+                    </div>
+                </div>
+                <div class="feature">
+                    <i class="fa-regular fa-lightbulb fa-lg" aria-hidden="true"></i>
+                    <h3>CREATIVE IDEAS</h3>
+                    <div>
+                        Aenean luctus, nisl et congue commodo, ligula neque fringilla lorem, 
+                        quis vehicula est leo et tortor. Cum sociis natoque penatibus et magnis dis.
+                    </div>
+                </div>
+            </div>
+            <div class="work-container">
+                
+            </div>
+        </div>
     </div>
+    <script src="../js/myscript.js"></script>
 </body>
 </html>
