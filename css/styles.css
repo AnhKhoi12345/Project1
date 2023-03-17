@@ -5,6 +5,7 @@
     --light-blueish-gray: #aab2bd;
     --lighter-blueish-gray:#f3f4f8;
     --darker-aquamarine: #48cfae;
+    --evendarker-blueish-gray: #343a43;
 }
 *{
     margin: 0;
@@ -15,15 +16,28 @@
 body{
     padding-top: 50px;
 }
+.noPadBody{
+    padding-top: 0 !important; 
+}
+.navBtnGray{
+    color: var(--darker-blueish-gray) !important;
+}
+.fix-navbar{
+    position: fixed !important;
+    height: 900px;
+    z-index: 2;
+}
+.white-navbar{
+    background-color: white !important;
+}
 .page{
-    display: flex;
     margin:0 auto;
-    /* flex: 0 0 220px; */
     width: 90%;
     height:auto;
-    /* border: 1px solid black; */
+    padding-bottom: 50px;
+
+    display: flex;
     flex-wrap: wrap;
-    
 }
 .dashed-hr{
     border-top:dashed 1px gray;
@@ -40,19 +54,19 @@ header{
 }
 .header-container{
     background: url(http://demo.rommar.in.ua/novanoid/novanoid-1/img/header-4.jpg) no-repeat;
-    /* background-size: 100%,100%; */
     background-position: top;
+
     border: 1px solid black;
     height: 600px;
     width: 100%;
-    /* margin: 0 auto;
-    margin-top: 0; */
+
     text-align: center;
 }
 .header-container h1{
-    color: aliceblue;
-    /* text-align: center; */
+    position: relative;
     margin-top: 300px;
+
+    color: aliceblue;
     font-size: 50px;
     font-weight: 400 ;
 }
@@ -61,12 +75,13 @@ header{
 }
 .nav-bar{
     /* padding: 0 40px 0 15px; */
-    display: flex;
-    position: fixed;
-    /* border: 1px solid black; */
-    justify-content: space-between;
+    position:absolute;
     width: 89.5%;
     height:100px;
+    /* border: 1px solid red; */
+
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     /* background-color: white; */
     /* opacity: 50%; */
@@ -88,11 +103,9 @@ header{
     background: url(http://demo.rommar.in.ua/novanoid/novanoid-1/img/logo-dark.png) no-repeat ;
     width: 80px;
     height: 27px;
-    /* border: 1px solid black; */
-    /* filter: invert(100%); */
     margin-left: 15px;
-    /* cursor: pointer; */
-    /* color: var(--darker-blueish-gray); */
+    text-decoration: none;
+
 }
 .nav-list-container{
     display: none;
@@ -111,7 +124,7 @@ header{
     /* border: 1px solid black; */
     top:100px;
     width: 90%;
-    background-color: #434a54;
+    background-color: var(--darker-blueish-gray);
 }
 .nav-list-item{
     margin-top: 10px;
@@ -145,7 +158,7 @@ header{
     padding-top: 100px;
     /* padding-left: 10px ;
     padding-right: 10px; */
-    padding-bottom: 100px ;
+    /* padding-bottom: 100px ; */
 }
 .feature-container{
     display: grid;
@@ -654,6 +667,7 @@ header{
     /* border: 1px solid black; */
     padding-top: 80px;
     padding-bottom: 80px;
+    /* width: 90%; */
 }
 .contact-container h2{
     /* margin-top: 100px; */
@@ -712,16 +726,105 @@ header{
     margin-bottom: 50px;
 }
 .contact-form{
-    text-align: left;
+    /* text-align: center; */
+    /* border: 1px solid black; */
+    width: 100%;
+    /* text-align:right; */
 }
+.form-input{
+    width: 90%;
+    height: 35px;
+    border-radius: 3px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    border: 1px solid var(--lighter-blueish-gray);
+    /* text-align: center; */
+    
+}
+#form-name::placeholder{
+    font-family: 'Roboto', sans-serif;
+}
+#form-email::placeholder{
+    font-family: 'Roboto', sans-serif;
+}
+#form-subject::placeholder{
+    font-family: 'Roboto', sans-serif;
+}
+#form-message::placeholder{
+    font-family: 'Roboto', sans-serif;
+    /* padding-top: 10px; */
+}
+#form-message{
+    height: 230px;
+    width: 90%;
+    padding-top: 10px;
+}
+.contact-form-btn{
+    font-size: 16px;
+    /* font-family:'Roboto', sans-serif; */
+    color: white;
+    background-color: var(--darker-aquamarine);
+    border: 1px solid var(--darker-aquamarine);
+    width: 160px;
+    height: 40px;
+    border-radius: 4px;
+    font-weight: 700;
+}
+.contact-form-btn i{
+    margin-right: 4px;
+}
+    /*contact end*/
+
+/*main content end*/
+
+/*footer start*/
+
+footer{
+    width: 100%;
+    height: auto;
+    background-color: var(--evendarker-blueish-gray);
+    text-align: center;
+}
+.footer-logo{
+    margin-top:70px; 
+    /* border: 1px red solid; */
+}
+.footer-container{
+    display: flex;
+    width: 100%;
+    height: 300px;
+    /* border: 1px red solid; */
+    align-items: center;
+    flex-direction: column;
+}
+.footer-icon-box{
+    /* border: 1px red solid; */
+    width: 220px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around ;
+    /* flex-wrap: wrap; */
+}
+.footer-icon-box i{
+    color: white;
+}
+.footer-container p{
+    margin-top: 70px;
+    color: white;
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*footer end*/
+
 @media only screen and (max-width: 400px) {
     body {
-      background-color: #F09A9D; 
+      background-color: var(--darker-blueish-gray); 
     }
   }
 @media only screen and (min-width: 401px) and (max-width: 670px) { 
     body {
-        background-color: indianred; 
+        background-color: var(--darker-blueish-gray); 
     }
 }
 @media only screen and (min-width: 671px) and (max-width: 767px) { /*pic in oiur work change to 2 column instead of 1*/

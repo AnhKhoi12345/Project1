@@ -11,11 +11,11 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Yanone+Kaffeesatz:wght@300;400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ff4c9e584d.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body id="body" class="">
     <div class = "page">
         <header class="header">
             <div class="header-container">
-                <nav class="nav-bar">
+                <nav class="nav-bar" id="nav-bar">
                     <a class ="nav-logo" href="index.html"></a>
                     <button id ="navbar-toggle" onclick="menuBtn()">
                         <i class="fa-solid fa-bars fa-xl" id="toggle-icon"></i>
@@ -437,11 +437,38 @@
                 </p>
                 <form action="#" method ="get" class="contact-form">
                     <div>
-                        <input type="text" placeholder="Name">
+                        <input class="form-input" id = "form-name" type="text" placeholder="Name" name="input-name" required minlength="3">
                     </div>
+                    <div>
+                        <input class="form-input" id = "form-email" type="text" placeholder="Email" name="input-email" required >
+                    </div>
+                    <div>
+                        <input class="form-input" id = "form-subject" type="email" placeholder="Subject" name="input-subject" required minlength="3">
+                    </div>
+                    <div>
+                        <textarea class="form-input" id = "form-message" type="text" placeholder="Message" name="input-message" required minlength="3"></textarea>
+                    </div>
+                    <button  type="submit" class="contact-form-btn"><i class="fa-solid fa-paper-plane"></i>SEND MESSAGE</button>
                 </form>
             </div>
         </div>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <img src="http://demo.rommar.in.ua/novanoid/novanoid-1/img/logo-light.png">
+                </div>
+                <div class="footer-icon-box">
+                    <a href="#"><i class="fa-brands fa-facebook-f fa-sm"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter fa-sm"></i></a>
+                    <a href="#"><i class="fa-solid fa-basketball fa-sm"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in fa-sm"></i></a>
+                    <a href="#"><i class="fa-brands fa-google-plus-g fa-sm"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-instagram fa-sm"></i></a>
+                    <a href="#"><i class="fa-brands fa-tumblr fa-sm"></i></a>
+                </div>
+                <p>Novanoid &copy; 2014 </p>
+            </div>
+        </footer>
     </div>
     <script src="../js/myscript.js"></script>
 </body>
