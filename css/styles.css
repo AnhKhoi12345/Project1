@@ -53,7 +53,7 @@ header{
     width: 100%;
 }
 .header-container{
-    background: url(http://demo.rommar.in.ua/novanoid/novanoid-1/img/header-4.jpg) no-repeat;
+    background: url(http://demo.rommar.in.ua/novanoid/novanoid-1/img/header-1.jpg) no-repeat;
     background-position: top;
 
     border: 1px solid black;
@@ -816,15 +816,68 @@ footer{
 }
 
 /*footer end*/
+/* .header-container-bg0{
+    background: url(http://demo.rommar.in.ua/novanoid/novanoid-1/img/header-4.jpg) no-repeat;
+} */
+/* .header-container-bg1{
+    background: url(http://demo.rommar.in.ua/novanoid/novanoid-1/img/header-1.jpg) no-repeat;
+} */
+.header-container-bg2{
+    background: url(http://demo.rommar.in.ua/novanoid/novanoid-1/img/header-2.jpg) no-repeat;
+    background-position: top;
+}
+.header-container-bg3{
+    background: url(http://demo.rommar.in.ua/novanoid/novanoid-1/img/header-3.jpg) no-repeat;
+    background-position: top;
+}
+.header-container-bg4{
+    background: url(http://demo.rommar.in.ua/novanoid/novanoid-1/img/header-4.jpg) no-repeat;
+    background-position: top;
+}
+.header-container-bg5{
+    background: url(http://demo.rommar.in.ua/novanoid/novanoid-1/img/header-5.jpg) no-repeat;
+    background-position: top;
 
-@media only screen and (max-width: 400px) {
+}
+
+@media only screen and (max-width: 459px) {
     body {
       background-color: var(--darker-blueish-gray); 
     }
   }
-@media only screen and (min-width: 401px) and (max-width: 670px) { 
+@media only screen and (min-width: 460px)  { /*work button column to tow*/
     body {
         background-color: var(--darker-blueish-gray); 
+    }   
+    .work-category{
+        margin: 0 auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 300px;
+    }
+    /* .work-category button{
+        width:30px;
+        border: 1px solid black;
+        color: blue;
+    } */
+    .work-category li:nth-child(1) button{
+        width:40px ;
+        /* color: red ; */
+        /* background-color: red; */
+    }
+    
+    .work-category li:nth-child(2) button{
+        width:40px ;
+    }
+    .work-category li:nth-child(3) button{
+        width:40px ;
+    }
+    .work-category li:nth-child(4) button{
+        width:70px ;
+    }
+    .work-category li:nth-child(5) button{
+        width:60px ;
     }
 }
 @media only screen and (min-width: 671px) and (max-width: 767px) { /*pic in oiur work change to 2 column instead of 1*/

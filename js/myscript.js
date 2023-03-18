@@ -4,8 +4,34 @@
 function menuBtn(){
     document.getElementById("nav-list-container").classList.toggle("show");
 }
-
+function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+}
 (function ($){
+window.onload = (event) => {
+    var pic = getRandomInt(5) + 1
+    console.log(pic);
+    var elementHeaderContainer = document.getElementById("header-container");
+    if(pic === 2){
+        elementHeaderContainer.classList.add("header-container-bg2");
+        console.log("header img change to 2");
+    }
+    else if(pic === 3){
+        elementHeaderContainer.classList.add("header-container-bg3");
+        console.log("header img change to 3");
+    }
+    else if(pic === 4){
+        elementHeaderContainer.classList.add("header-container-bg4");
+        console.log("header img change to 4");
+    }
+    else if(pic === 2){
+        elementHeaderContainer.classList.add("header-container-bg5");
+        console.log("header img change to 5");
+    }
+    else{
+        console.log("header img not change");
+    }
+    };    
 window.onscroll = function(){
     //do work
         var scrollTop = window.pageYOffset;
