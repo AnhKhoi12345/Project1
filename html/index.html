@@ -104,67 +104,66 @@
                 <p>Praesent lacinia sem sed risus consectetur, 
                     et volutpat nulla bibendum.</p>
                 <ul class="work-category">
-                    <li><button class="btn-category-all">ALL</button></li>
-                    <li><button class="btn-category-travel">TRAVEL</button></li>
-                    <li><button class="btn-category-road">ROAD</button></li>
-                    <li><button class="btn-category-mountains">MOUNTAINS</button></li>
-                    <li><button class="btn-category-nature">NATURE</button></li>
+                    <li><button id="btn-all" class="btn-category-all" onclick="allBtn()">ALL</button></li>
+                    <li><button id="btn-travel" class="btn-category-travel" onclick="travelBtn()">TRAVEL</button></li>
+                    <li><button id="btn-road" class="btn-category-road" onclick="roadlBtn()">ROAD</button></li>
+                    <li><button id="btn-mountains" class="btn-category-mountains" onclick="mountainsBtn()">MOUNTAINS</button></li>
+                    <li><button id="btn-nature" class="btn-category-nature" onclick="natureBtn()">NATURE</button></li>
                 </ul>
                 <ul class="work-collection">
-                    <li class="work-item work-collection1">
-                    <div class="image">
-                        <a href="http://demo.rommar.in.ua/novanoid/novanoid-1/img/work-1.jpg">
-                        <span>TITLE</span>
+                    <li class="work-item work-collection1" id="work-item-1">
+                        <div class="image" id="work-image-1">
+                        <div class="overlay" id="work-overlay-1"><h3 id="work-title-1">TITLE</h3></div>
                         <img src="http://demo.rommar.in.ua/novanoid/novanoid-1/img/work-1.jpg">
-                        </a>
+                        
                     </div>
                     </li>
-                    <li class="work-item work-collection2">
-                        <div class="image">
+                    <li class="work-item work-collection2"  id="work-item-2">
+                        <div class="image" id="work-image-2">
+                            <div class="overlay" id="work-overlay-2"><h3 id="work-title-2">TITLE</h3></div>
                             <img src="http://demo.rommar.in.ua/novanoid/novanoid-1/img/work-2.jpg">
-                            <span>TITLE</span>
                         </div>
                     </li>
-                    <li class="work-item work-collection3">
-                        <div class="image">
+                    <li class="work-item work-collection3"  id="work-item-3">
+                        <div class="image" id="work-image-3">
+                            <div class="overlay" id="work-overlay-3"><h3 id="work-title-3">TITLE</h3></div>
                             <img src="http://demo.rommar.in.ua/novanoid/novanoid-1/img/work-3.jpg">
-                            <span>TITLE</span>
                         </div>
                     </li>
-                    <li class="work-item work-collection4">
-                        <div class="image">
+                    <li class="work-item work-collection4"  id="work-item-4">
+                        <div class="image" id="work-image-4">
+                            <div class="overlay" id="work-overlay-4"><h3 id="work-title-4">TITLE</h3></div>
                             <img src="http://demo.rommar.in.ua/novanoid/novanoid-1/img/work-4.jpg">
-                            <span>TITLE</span>
                         </div>
                     </li>
-                    <li class="work-item work-collection5">
-                        <div class="image">
+                    <li class="work-item work-collection5"  id="work-item-5">
+                        <div class="image" id="work-image-5">
+                            <div class="overlay" id="work-overlay-5"><h3 id="work-title-5">TITLE</h3></div>
                             <img src="http://demo.rommar.in.ua/novanoid/novanoid-1/img/work-5.jpg">
-                            <span>TITLE</span>
                         </div>
                     </li>
-                    <li class="work-item work-collection6">
-                        <div class="image">
+                    <li class="work-item work-collection6"  id="work-item-6">
+                        <div class="image" id="work-image-6">
+                            <div class="overlay" id="work-overlay-6"><h3 id="work-title-6">TITLE</h3></div>
                             <img src="http://demo.rommar.in.ua/novanoid/novanoid-1/img/work-6.jpg">
-                            <span>TITLE</span>
                         </div>
                     </li>
-                    <li class="work-item work-collection7">
-                        <div class="image">
+                    <li class="work-item work-collection7"  id="work-item-7">
+                        <div class="image" id="work-image-7">
+                            <div class="overlay" id="work-overlay-7"><h3 id="work-title-7">TITLE</h3></div>
                             <img src="http://demo.rommar.in.ua/novanoid/novanoid-1/img/work-7.jpg">
-                            <span>TITLE</span>
                         </div>
                     </li>
-                    <li class="work-item work-collection8">
-                        <div class="image">
+                    <li class="work-item work-collection8"  id="work-item-8">
+                        <div class="image" id="work-image-8">
+                            <div class="overlay" id="work-overlay-8"><h3 id="work-title-8">TITLE</h3></div>
                             <img src="http://demo.rommar.in.ua/novanoid/novanoid-1/img/work-8.jpg">
-                            <span>TITLE</span>
                         </div>
                     </li>
-                    <li class="work-item work-collection9">
-                        <div class="image">
+                    <li class="work-item work-collection9"  id="work-item-9">
+                        <div class="image" id="work-image-9">
+                            <div class="overlay" id="work-overlay-9"><h3 id="work-title-9">TITLE</h3></div>
                             <img src="http://demo.rommar.in.ua/novanoid/novanoid-1/img/work-9.jpg">
-                            <span>TITLE</span>
                         </div>
                     </li>
                 </ul>
@@ -231,7 +230,7 @@
                     consectetur ligula, ut luctus tellus. 
                     Nulla in orci pharetra, placerat magna nec, pretium.
                 </p>
-                <button ><b><i class="fa-solid fa-eye"></i> READ MORE</b></button>
+                <a href="index.html"><button id="parallax-button" type="button"><b><i class="fa-solid fa-eye" id="parallax-i"></i> READ MORE</b></button></a>
             </div>
             <div class="team-container">
                 <h2>OUR TEAM</h2>
@@ -240,32 +239,80 @@
                     et volutpat nulla bibendum.</p>  
                 <ul class="team-flexbox">
                     <li class="team-member">
-                        <img src="http://demo.rommar.in.ua/novanoid/novanoid-1/img/member-1.jpg">
+                        <div class="team-img" id="team-img-1">
+                        <div class="team-overlay" id="team-overlay-1">                
+                            <div class="team-icon-box">
+                            <a href="#"><i class="fa-brands fa-facebook-f "></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter "></i></a>
+                            <a href="#"><i class="fa-solid fa-basketball "></i></a></div>
+                        </div>
+                        <img src="http://demo.rommar.in.ua/novanoid/novanoid-1/img/member-1.jpg" id="team-img-1">
+                    </div>
                         <h3>RUSSEL J.SPAN</h3>
                         <span>Founder</span>
                     </li>
                     <li class="team-member">
+                        <div class="team-img" id="team-img-2">
+                            <div class="team-overlay" id="team-overlay-2">                
+                                <div class="team-icon-box">
+                                <a href="#"><i class="fa-brands fa-facebook-f "></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter "></i></a>
+                                <a href="#"><i class="fa-solid fa-basketball "></i></a></div>
+                            </div>
                         <img src="http://demo.rommar.in.ua/novanoid/novanoid-1/img/member-2.jpg">
+                        </div>
                         <h3>ETTA R.CARTER</h3>
                         <span>Manager</span>
                     </li>
                     <li class="team-member">
+                        <div class="team-img" id="team-img-3">
+                            <div class="team-overlay" id="team-overlay-3">                
+                                <div class="team-icon-box">
+                                <a href="#"><i class="fa-brands fa-facebook-f "></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter "></i></a>
+                                <a href="#"><i class="fa-solid fa-basketball "></i></a></div>
+                            </div>
                         <img src="http://demo.rommar.in.ua/novanoid/novanoid-1/img/member-3.jpg">
+                        </div>
                         <h3>RONALD J.SMITH</h3>
                         <span>Coder</span>
                     </li>
                     <li class="team-member">
+                        <div class="team-img" id="team-img-4">
+                            <div class="team-overlay" id="team-overlay-4">                
+                                <div class="team-icon-box">
+                                <a href="#"><i class="fa-brands fa-facebook-f "></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter "></i></a>
+                                <a href="#"><i class="fa-solid fa-basketball "></i></a></div>
+                            </div>
                         <img src="http://demo.rommar.in.ua/novanoid/novanoid-1/img/member-4.jpg">
+                        </div>
                         <h3>PATRICK J.LAMES</h3>
                         <span>Developer</span>
                     </li>
                     <li class="team-member">
+                        <div class="team-img" id="team-img-5">
+                            <div class="team-overlay" id="team-overlay-5">                
+                                <div class="team-icon-box">
+                                <a href="#"><i class="fa-brands fa-facebook-f "></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter "></i></a>
+                                <a href="#"><i class="fa-solid fa-basketball "></i></a></div>
+                            </div>
                         <img src="http://demo.rommar.in.ua/novanoid/novanoid-1/img/member-5.jpg">
+                        </div>
                         <h3>TAMARA R.BURNS</h3>
                         <span>Coodrdinator</span>
                     </li>
                     <li class="team-member">
+                        <div class="team-img" id="team-img-6">
+                            <div class="team-overlay" id="team-overlay-6">                
+                                <div class="team-icon-box">
+                                <a href="#"><i class="fa-brands fa-facebook-f "></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter "></i></a>
+                                <a href="#"><i class="fa-solid fa-basketball "></i></a></div>
+                            </div>
                         <img src="http://demo.rommar.in.ua/novanoid/novanoid-1/img/member-6.jpg">
+                        </div>
                         <h3>JORGE E.MARR</h3>
                         <span>Support</span>
                     </li>
@@ -323,7 +370,7 @@
                             <p>FTP</p>
                             <!-- <br> -->
                             <p>Full Support</p>
-                            <button>BUY NOW</button>
+                            <a href="#"><button id="buy-button-1"><span id="buy-now-1">BUY NOW</span><i class="fa-solid fa-credit-card" id="buy-i-1"></i></button></a>
                         </div>
                     </div>
                     <div class="buy-box">
@@ -340,7 +387,7 @@
                             <p>FTP</p>
                             <!-- <br> -->
                             <p>Full Support</p>
-                            <button>BUY NOW</button>
+                            <a href="#"><button id="buy-button-2"><span id="buy-now-2">BUY NOW</span><i class="fa-solid fa-credit-card" id="buy-i-2"></i></button></a>
                         </div>
                     </div>
                     <div class="buy-box">
@@ -357,7 +404,7 @@
                             <p>FTP + SSH</p>
                             <!-- <br> -->
                             <p>24/7 Full Support</p>
-                            <button>BUY NOW</button>
+                            <a href="#"><button id="buy-button-3"><span id="buy-now-3">BUY NOW</span><i class="fa-solid fa-credit-card" id="buy-i-3"></i></button></a>
                         </div>
                     </div>
                 </div>
@@ -374,7 +421,7 @@
                         <p class="blog-info">Aenean odio massa, mattis et vestibulum ac, 
                             iaculis non lacus. 
                             Pellentesque auctor arcu vulputate est rutrum egestas. </p>
-                        <button>READ MORE</button>
+                        <a href="#"><button>READ MORE</button></a>
                     </div>
                     <div class="blog-item">
                         <p class="blog-header"><b>Ut lorem est porttitor eget fermentum</b></p>
@@ -382,7 +429,7 @@
                         <p class="blog-info">Aenean odio massa, mattis et vestibulum ac, 
                             iaculis non lacus. 
                             Pellentesque auctor arcu vulputate est rutrum egestas. </p>
-                        <button>READ MORE</button>
+                        <a href="#"><button>READ MORE</button></a>
                     </div>
                     <div class="blog-item">
                         <p class="blog-header"><b>Ut lorem est porttitor eget fermentum</b></p>
@@ -390,7 +437,7 @@
                         <p class="blog-info">Aenean odio massa, mattis et vestibulum ac, 
                             iaculis non lacus. 
                             Pellentesque auctor arcu vulputate est rutrum egestas. </p>
-                        <button>READ MORE</button>
+                        <a href="#"><button>READ MORE</button></a>
                     </div>
                     <div class="blog-item">
                         <p class="blog-header"><b>Ut lorem est porttitor eget fermentum</b></p>
@@ -398,7 +445,7 @@
                         <p class="blog-info">Aenean odio massa, mattis et vestibulum ac, 
                             iaculis non lacus. 
                             Pellentesque auctor arcu vulputate est rutrum egestas. </p>
-                        <button>READ MORE</button>
+                        <a href="#"><button>READ MORE</button></a>
                     </div>
                     <div class="blog-item">
                         <p class="blog-header"><b>Ut lorem est porttitor eget fermentum</b></p>
@@ -406,7 +453,7 @@
                         <p class="blog-info">Aenean odio massa, mattis et vestibulum ac, 
                             iaculis non lacus. 
                             Pellentesque auctor arcu vulputate est rutrum egestas. </p>
-                        <button>READ MORE</button>
+                        <a href="#"><button>READ MORE</button></a>
                     </div>
                     <div class="blog-item">
                         <p class="blog-header"><b>Ut lorem est porttitor eget fermentum</b></p>
@@ -414,10 +461,10 @@
                         <p class="blog-info">Aenean odio massa, mattis et vestibulum ac, 
                             iaculis non lacus. 
                             Pellentesque auctor arcu vulputate est rutrum egestas. </p>
-                        <button>READ MORE</button>
+                        <a href="#"><button>READ MORE</button></a>
                     </div>
                 </div>
-                <button class="blog-read-all"><i class="fa-solid fa-eye"></i> READ ALL POST</button>
+                <button class="blog-read-all" id="blog-readall-button"><i class="fa-solid fa-eye" id="blog-i"></i> READ ALL POST</button>
             </div>
             <div class="contact-container">
                 <h2>CONTACT US</h2>
@@ -447,23 +494,26 @@
                         <input class="form-input" id = "form-name" type="text" placeholder="Name" name="input-name" required minlength="3">
                     </div>
                     <div>
-                        <input class="form-input" id = "form-email" type="text" placeholder="Email" name="input-email" required >
+                        <input class="form-input" id = "form-email" type="email" placeholder="Email" name="input-email" required >
                     </div>
                     <div>
-                        <input class="form-input" id = "form-subject" type="email" placeholder="Subject" name="input-subject" required minlength="3">
+                        <input class="form-input" id = "form-subject" type="text" placeholder="Subject" name="input-subject" required minlength="3">
                     </div>
                     <div>
                         <textarea class="form-input" id = "form-message" type="text" placeholder="Message" name="input-message" required minlength="3"></textarea>
                     </div>
-                    <button  type="submit" class="contact-form-btn"><i class="fa-solid fa-paper-plane"></i>SEND MESSAGE</button>
+                    <button  type="button" value="Submit" class="contact-form-btn" onclick="submitForm()"><i class="fa-solid fa-paper-plane"></i>SEND MESSAGE</button>
                 </form>
+                <div id="greet-user"></div>
             </div>
         </div>
         <footer>
             <div class="footer-container">
+                <a href="index.html">
                 <div class="footer-logo">
                     <img src="http://demo.rommar.in.ua/novanoid/novanoid-1/img/logo-light.png">
                 </div>
+            </a>
                 <div class="footer-icon-box">
                     <a href="#"><i class="fa-brands fa-facebook-f fa-sm"></i></a>
                     <a href="#"><i class="fa-brands fa-twitter fa-sm"></i></a>
