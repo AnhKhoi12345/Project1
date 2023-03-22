@@ -260,6 +260,19 @@ function readAllBtn(){
         blogReadAllBtn.classList.remove("buy-button-dark");
 }) 
 }
+
+function sendMessageButton(){
+    var formSendMessage=document.getElementById("form-send-message")
+    formSendMessage.addEventListener("mouseover",()=>{
+        formSendMessage.classList.add("buy-button-dark");
+        document.getElementById("send-i").classList.add("h1-hide");   
+    })
+    formSendMessage.addEventListener("mouseout",()=>{
+        document.getElementById("send-i").classList.remove("h1-hide");   
+        formSendMessage.classList.remove("buy-button-dark");
+}) 
+}
+
 var workImg1=document.getElementById("work-image-1")
 var workImg2=document.getElementById("work-image-2")
 var workImg3=document.getElementById("work-image-3")
@@ -461,9 +474,89 @@ function buyButton(){
 // var teamImg1=document.getElementById('team-img-1').style.height;
 // teamOverlay1 = teamImg1;
 function submitForm() {
-    var variable = document.getElementById('form-name').value;
-    document.getElementById('greet-user').innerHTML = 'Hello: ' + variable +". Thanks for your message";
-  }
+    var nameVariable = document.getElementById('form-name');
+    var emailVariable = document.getElementById('form-email');
+    var phoneVariable = document.getElementById('form-number');
+    var subjectVariable = document.getElementById('form-subject');
+    var messageVariable = document.getElementById('form-message');
+    const formList = [nameVariable,emailVariable, phoneVariable,subjectVariable, messageVariable];
+
+    var nameEmpty = true;
+    var emailEmpty = true;
+    var phoneEmpty = true;
+    var subjectEmpty = true;
+    var messageEmpty = true;
+    const formEmptyList = [nameEmpty,emailEmpty,phoneEmpty, subjectEmpty,messageEmpty];
+    var allEmpty = true;
+    console.log("be4 formlist loop" + allEmpty)
+    for(i = 0; i < formList.length; i++){
+        if(formList[i].value.length < 1){
+            formList[i].style.borderColor = 'red';
+            formEmptyList[i] = true;
+            console.log(formList[i].length+"border red");
+            console.log(formEmptyList[i])
+        }
+    
+    else{
+        formList[i].style.borderColor = '#f3f4f8';
+        formEmptyList[i] = false;
+        console.log(formList[i].length+"pass");
+        console.log(formEmptyList[i])
+        }
+    }
+    for(i=0; i<formEmptyList.length; i++){
+        if(formEmptyList[i] === true){
+            allEmpty = true;
+            break;
+        }
+        else{
+        allEmpty = false;
+        }
+    }
+    console.log("after formlist loop" + allEmpty)
+
+    
+    function allValid(){
+        if(nameVariable.value.length <= 3){
+            document.getElementById('input-error').innerHTML = "Your name must be longer than 3 characters.";
+            return false;
+        }
+        if(emailVariable.value.includes("@gmail.com") === false){
+            document.getElementById('input-error').innerHTML = "Your email must include a @gmail.com address.";
+            return false;
+        }
+        if(phoneVariable.value.length <= 9){
+            document.getElementById('input-error').innerHTML = "Your phone number must be longer than 9 numbers.";
+            return false;
+        }
+        if(subjectVariable.value.length <= 3){
+            document.getElementById('input-error').innerHTML = "Your subject must be longer than 3 characters.";
+            return false;
+        }
+        if(messageVariable.value.length <= 3){
+            document.getElementById('input-error').innerHTML = "Your message must be longer than 3 characters.";
+            return false;
+        }
+        return true;
+    }
+    console.log(allValid())
+
+
+
+    if(allValid() === true){
+        console.log("all valid")
+        document.getElementById('input-error').innerHTML ="";
+        document.getElementById('greet-user').style.color = '#48cfae';
+        document.getElementById('greet-user').innerHTML = 'Hello: ' + nameVariable.value +". Thanks for your message";}
+
+    
+    else{
+        document.getElementById('greet-user').style.color = 'red';
+            document.getElementById('greet-user').innerHTML = "Please check your input";}
+}
+
+
+
   
 
 
@@ -484,6 +577,8 @@ window.onload = (event) => {
     buyButton();
     
     readAllBtn()
+
+    sendMessageButton()
 
     var pic = getRandomInt(5) + 1
     console.log(pic);
@@ -518,6 +613,8 @@ window.onscroll = function(){
         var elementNavbar = document.getElementById("nav-bar");
         var elementBody = document.getElementById("body");
         var elementNavBtn = document.getElementById("toggle-icon");
+        var elementListContainer = document.getElementById("nav-list-container");
+        var navFlexItem = document.getElementsByClassName("nav-flex-item");
         // console.log(elementNavbar)
         if (scrollTop >= 147) {
             elementNavbar.classList.add("fix-navbar");
@@ -530,13 +627,23 @@ window.onscroll = function(){
             console.log("navbar stick Deactivated");
         }
 
-        if (scrollTop >= 570){
+        if (scrollTop >= 550){
+            for(var i = 0; i < navFlexItem.length; i++)
+            {
+                navFlexItem[i].classList.add('navBtnGray');
+            }
             elementNavBtn.classList.add("navBtnGray");
             elementNavbar.classList.add("white-navbar");
+            elementListContainer.classList.add("white-navbar");
         }
         else{
+            for(var i = 0; i < navFlexItem.length; i++)
+            {
+                navFlexItem[i].classList.remove('navBtnGray');
+            }
             elementNavBtn.classList.remove("navBtnGray");
             elementNavbar.classList.remove("white-navbar");
+            elementListContainer.classList.remove("white-navbar");
           }
    
   };
