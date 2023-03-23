@@ -234,6 +234,9 @@ border: 1px solid white;
     row-gap: 20px;
     padding-bottom: 75px;
 }
+.feature{
+    opacity: 0;
+}
 .feature div{
     padding-right: 15px;
     font-family: 'Roboto', sans-serif;
@@ -335,7 +338,7 @@ border: 1px solid white;
     width: 500px;
     height: 200px;
     color: black;
-    z-index: 1;
+    /* z-index: 1; */
     opacity: 0.9;
 }
 .overlay h3{
@@ -387,6 +390,9 @@ border: 1px solid white;
     grid-template-columns: auto;
     grid-template-rows: auto auto auto auto auto auto;
     row-gap: 50px;
+}
+.service{
+    opacity: 0;
 }
 .service i{
     color: var(--darker-aquamarine);
@@ -622,6 +628,7 @@ border: 1px solid white;
     width: 93%;
     height: 370px;
     border: 1px solid azure;
+    opacity: 0;
 }
 .buy-box hr{
     width: 100%;
@@ -802,6 +809,9 @@ display: none;
     padding-top: 15px;
     font-size: small;
     color: var(--dark-blueish-gray);
+}
+.contact-flex-item{
+    opacity: 0;
 }
 .contact-address-header{
     margin-top: 50px;
@@ -991,6 +1001,16 @@ footer{
 .fade-out-09{
     animation: fadeout09;
     animation-duration: 0.5s;
+}
+.text-in-fully{
+    animation: fadeinfully;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+.box-in-fully{
+    animation: fadeinfully;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 @keyframes fadeinfully{
     from { opacity:0}

@@ -607,44 +607,132 @@ window.onload = (event) => {
 
 
 window.onscroll = function(){
-    //do work
-        var scrollTop = window.pageYOffset;
-        console.log(scrollTop);
-        var elementNavbar = document.getElementById("nav-bar");
-        var elementBody = document.getElementById("body");
-        var elementNavBtn = document.getElementById("toggle-icon");
-        var elementListContainer = document.getElementById("nav-list-container");
-        var navFlexItem = document.getElementsByClassName("nav-flex-item");
-        // console.log(elementNavbar)
-        if (scrollTop >= 147) {
-            elementNavbar.classList.add("fix-navbar");
-            elementBody.classList.add("noPadBody");
-            console.log("navbar stick Activated");
-        }
-        else {
-            elementNavbar.classList.remove("fix-navbar");
-            elementBody.classList.remove("noPadBody");
-            console.log("navbar stick Deactivated");
-        }
+    
+    function isInViewport(element) {
+        const rect = element.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
+    
+    var feat1 = document.querySelector(" .feat1");
+    var feat2 = document.querySelector(" .feat2");
+    var feat3 = document.querySelector(" .feat3");
+    var feat4 = document.querySelector(" .feat4");
+    var feat5 = document.querySelector(" .feat5");
+    var feat6 = document.querySelector(" .feat6");
+    // console.log(isInViewport(feat1))
+    if(isInViewport(feat1) === true){
+        feat1.classList.add("text-in-fully")
+    }
+    if(isInViewport(feat2) === true){
+        feat2.classList.add("text-in-fully")
+    }
+    if(isInViewport(feat3) === true){
+        feat3.classList.add("text-in-fully")
+    }
+    if(isInViewport(feat4) === true){
+        feat4.classList.add("text-in-fully")
+    }
+    if(isInViewport(feat5) === true){
+        feat5.classList.add("text-in-fully")
+    }
+    if(isInViewport(feat6) === true){
+        feat6.classList.add("text-in-fully")
+    }
+    
+    var serv1 = document.querySelector(" .service1");
+    var serv2 = document.querySelector(" .service2");
+    var serv3 = document.querySelector(" .service3");
+    var serv4 = document.querySelector(" .service4");
+    var serv5 = document.querySelector(" .service5");
+    var serv6 = document.querySelector(" .service6");
+    if(isInViewport(serv1) === true){
+        serv1.classList.add("text-in-fully")
+    }
+    if(isInViewport(serv2) === true){
+        serv2.classList.add("text-in-fully")
+    }
+    if(isInViewport(serv3) === true){
+        serv3.classList.add("text-in-fully")
+    }
+    if(isInViewport(serv4) === true){
+        serv4.classList.add("text-in-fully")
+    }
+    if(isInViewport(serv5) === true){
+        serv5.classList.add("text-in-fully")
+    }
+    if(isInViewport(serv6) === true){
+        serv6.classList.add("text-in-fully")
+    }
 
-        if (scrollTop >= 550){
-            for(var i = 0; i < navFlexItem.length; i++)
-            {
-                navFlexItem[i].classList.add('navBtnGray');
-            }
-            elementNavBtn.classList.add("navBtnGray");
-            elementNavbar.classList.add("white-navbar");
-            elementListContainer.classList.add("white-navbar");
+    var buy1 = document.querySelector(" .buy-box-1");
+    var buy2 = document.querySelector(" .buy-box-2");
+    var buy3 = document.querySelector(" .buy-box-3");
+    if(isInViewport(buy1) === true){
+        buy1.classList.add("box-in-fully")
+    }
+    if(isInViewport(buy2) === true){
+        buy2.classList.add("box-in-fully")
+    }
+    if(isInViewport(buy3) === true){
+        buy3.classList.add("box-in-fully")
+    }
+
+    var contact1 = document.querySelector(" .contact-1");
+    var contact2 = document.querySelector(" .contact-2");
+    var contact3 = document.querySelector(" .contact-3");
+    if(isInViewport(contact1) === true){
+        contact1.classList.add("text-in-fully")
+    }
+    if(isInViewport(contact2) === true){
+        contact2.classList.add("text-in-fully")
+    }
+    if(isInViewport(contact3) === true){
+        contact3.classList.add("text-in-fully")
+    }
+
+
+    var scrollTop = window.pageYOffset;
+    console.log(scrollTop);
+    var elementNavbar = document.getElementById("nav-bar");
+    var elementBody = document.getElementById("body");
+    var elementNavBtn = document.getElementById("toggle-icon");
+    var elementListContainer = document.getElementById("nav-list-container");
+    var navFlexItem = document.getElementsByClassName("nav-flex-item");
+
+    if (scrollTop >= 147) {
+        elementNavbar.classList.add("fix-navbar");
+        elementBody.classList.add("noPadBody");
+        console.log("navbar stick Activated");
+    }
+    else {
+        elementNavbar.classList.remove("fix-navbar");
+        elementBody.classList.remove("noPadBody");
+        console.log("navbar stick Deactivated");
+    }
+
+    if (scrollTop >= 550){
+        for(var i = 0; i < navFlexItem.length; i++)
+        {
+            navFlexItem[i].classList.add('navBtnGray');
         }
-        else{
-            for(var i = 0; i < navFlexItem.length; i++)
-            {
-                navFlexItem[i].classList.remove('navBtnGray');
-            }
-            elementNavBtn.classList.remove("navBtnGray");
-            elementNavbar.classList.remove("white-navbar");
-            elementListContainer.classList.remove("white-navbar");
-          }
+        elementNavBtn.classList.add("navBtnGray");
+        elementNavbar.classList.add("white-navbar");
+        elementListContainer.classList.add("white-navbar");
+    }
+    else{
+        for(var i = 0; i < navFlexItem.length; i++)
+        {
+            navFlexItem[i].classList.remove('navBtnGray');
+        }
+        elementNavBtn.classList.remove("navBtnGray");
+        elementNavbar.classList.remove("white-navbar");
+        elementListContainer.classList.remove("white-navbar");
+        }
    
   };
 }());
