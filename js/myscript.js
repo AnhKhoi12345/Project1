@@ -108,25 +108,25 @@ var btnMountains = document.getElementById("btn-mountains").classList
 var btnNature = document.getElementById("btn-nature").classList
 
 function allBtn(){
-    work1.remove("work-image-filter")
-    work2.remove("work-image-filter")
-    work3.remove("work-image-filter")
-    work4.remove("work-image-filter")
-    work5.remove("work-image-filter")
-    work6.remove("work-image-filter")
-    work7.remove("work-image-filter")
-    work8.remove("work-image-filter")
-    work9.remove("work-image-filter")
+    work1.remove("work-animation-filter")
+    work2.remove("work-animation-filter")
+    work3.remove("work-animation-filter")
+    work4.remove("work-animation-filter")
+    work5.remove("work-animation-filter")
+    work6.remove("work-animation-filter")
+    work7.remove("work-animation-filter")
+    work8.remove("work-animation-filter")
+    work9.remove("work-animation-filter")
 
-    work1.add("fade");
-    work2.add("fade");
-    work3.add("fade");
-    work4.add("fade");
-    work5.add("fade");
-    work6.add("fade");
-    work7.add("fade");
-    work8.add("fade");
-    work9.add("fade");
+    work1.add("work-image-unfilter");
+    work2.add("work-image-unfilter");
+    work3.add("work-image-unfilter");
+    work4.add("work-image-unfilter");
+    work5.add("work-image-unfilter");
+    work6.add("work-image-unfilter");
+    work7.add("work-image-unfilter");
+    work8.add("work-image-unfilter");
+    work9.add("work-image-unfilter");
 
     btnAll.add("work-button-active")
     btnTravel.remove("work-button-active")
@@ -136,25 +136,25 @@ function allBtn(){
 }
 
 function travelBtn(){
-    work1.remove("work-image-filter")
-    work2.add("work-image-filter")
-    work3.remove("work-image-filter")
-    work4.add("work-image-filter")
-    work5.remove("work-image-filter")
-    work6.add("work-image-filter")
-    work7.add("work-image-filter")
-    work8.add("work-image-filter")
-    work9.remove("work-image-filter")
+    work1.remove("work-animation-filter")
+    work2.add("work-animation-filter")
+    work3.remove("work-animation-filter")
+    work4.add("work-animation-filter")
+    work5.remove("work-animation-filter")
+    work6.add("work-animation-filter")
+    work7.add("work-animation-filter")
+    work8.add("work-animation-filter")
+    work9.remove("work-animation-filter")
 
-    work1.add("fade");
-    work2.remove("fade");
-    work3.add("fade");
-    work4.remove("fade");
-    work5.add("fade");
-    work6.remove("fade");
-    work7.remove("fade");
-    work8.remove("fade");
-    work9.add("fade");
+    work1.add("work-image-unfilter");
+    work2.remove("work-image-unfilter");
+    work3.add("work-image-unfilter");
+    work4.remove("work-image-unfilter");
+    work5.add("work-image-unfilter");
+    work6.remove("work-image-unfilter");
+    work7.remove("work-image-unfilter");
+    work8.remove("work-image-unfilter");
+    work9.add("work-image-unfilter");
 
     btnAll.remove("work-button-active")
     btnTravel.add("work-button-active")
@@ -163,25 +163,25 @@ function travelBtn(){
     btnNature.remove("work-button-active")
 }
 function roadlBtn(){
-    work1.add("work-image-filter")
-    work2.remove("work-image-filter")
-    work3.add("work-image-filter")
-    work4.remove("work-image-filter")
-    work5.add("work-image-filter")
-    work6.add("work-image-filter")
-    work7.remove("work-image-filter")
-    work8.add("work-image-filter")
-    work9.remove("work-image-filter")
+    work1.add("work-animation-filter")
+    work2.remove("work-animation-filter")
+    work3.add("work-animation-filter")
+    work4.remove("work-animation-filter")
+    work5.add("work-animation-filter")
+    work6.add("work-animation-filter")
+    work7.remove("work-animation-filter")
+    work8.add("work-animation-filter")
+    work9.remove("work-animation-filter")
 
-    work1.remove("fade");
-    work2.add("fade");
-    work3.remove("fade");
-    work4.add("fade");
-    work5.remove("fade");
-    work6.remove("fade");
-    work7.add("fade");
-    work8.remove("fade");
-    work9.add("fade");
+    work1.remove("work-image-unfilter");
+    work2.add("work-image-unfilter");
+    work3.remove("work-image-unfilter");
+    work4.add("work-image-unfilter");
+    work5.remove("work-image-unfilter");
+    work6.remove("work-image-unfilter");
+    work7.add("work-image-unfilter");
+    work8.remove("work-image-unfilter");
+    work9.add("work-image-unfilter");
 
     btnAll.remove("work-button-active")
     btnTravel.remove("work-button-active")
@@ -191,25 +191,25 @@ function roadlBtn(){
 }
 
 function mountainsBtn(){
-    work1.add("work-image-filter")
-    work2.remove("work-image-filter")
-    work3.remove("work-image-filter")
-    work4.add("work-image-filter")
-    work5.remove("work-image-filter")
-    work6.remove("work-image-filter")
-    work7.add("work-image-filter")
-    work8.remove("work-image-filter")
-    work9.add("work-image-filter")
+    work1.add("work-animation-filter")
+    work2.remove("work-animation-filter")
+    work3.remove("work-animation-filter")
+    work4.add("work-animation-filter")
+    work5.remove("work-animation-filter")
+    work6.remove("work-animation-filter")
+    work7.add("work-animation-filter")
+    work8.remove("work-animation-filter")
+    work9.add("work-animation-filter")
 
-    work1.remove("fade");
-    work2.add("fade");
-    work3.add("fade");
-    work4.remove("fade");
-    work5.add("fade");
-    work6.add("fade");
-    work7.remove("fade");
-    work8.add("fade");
-    work9.remove("fade");
+    work1.remove("work-image-unfilter");
+    work2.add("work-image-unfilter");
+    work3.add("work-image-unfilter");
+    work4.remove("work-image-unfilter");
+    work5.add("work-image-unfilter");
+    work6.add("work-image-unfilter");
+    work7.remove("work-image-unfilter");
+    work8.add("work-image-unfilter");
+    work9.remove("work-image-unfilter");
 
     btnAll.remove("work-button-active")
     btnTravel.remove("work-button-active")
@@ -218,25 +218,25 @@ function mountainsBtn(){
     btnNature.remove("work-button-active")
 }
 function natureBtn(){
-    work1.remove("work-image-filter")
-    work2.add("work-image-filter")
-    work3.add("work-image-filter")
-    work4.remove("work-image-filter")
-    work5.add("work-image-filter")
-    work6.remove("work-image-filter")
-    work7.remove("work-image-filter")
-    work8.remove("work-image-filter")
-    work9.add("work-image-filter")
+    work1.remove("work-animation-filter")
+    work2.add("work-animation-filter")
+    work3.add("work-animation-filter")
+    work4.remove("work-animation-filter")
+    work5.add("work-animation-filter")
+    work6.remove("work-animation-filter")
+    work7.remove("work-animation-filter")
+    work8.remove("work-animation-filter")
+    work9.add("work-animation-filter")
 
-    work1.add("fade");
-    work2.remove("fade");
-    work3.remove("fade");
-    work4.add("fade");
-    work5.remove("fade");
-    work6.add("fade");
-    work7.add("fade");
-    work8.add("fade");
-    work9.remove("fade");
+    work1.add("work-image-unfilter");
+    work2.remove("work-image-unfilter");
+    work3.remove("work-image-unfilter");
+    work4.add("work-image-unfilter");
+    work5.remove("work-image-unfilter");
+    work6.add("work-image-unfilter");
+    work7.add("work-image-unfilter");
+    work8.add("work-image-unfilter");
+    work9.remove("work-image-unfilter");
 
     btnAll.remove("work-button-active")
     btnTravel.remove("work-button-active")
@@ -554,14 +554,43 @@ function submitForm() {
         document.getElementById('greet-user').style.color = 'red';
             document.getElementById('greet-user').innerHTML = "Please check your input";}
 }
+function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+function animateValue(obj, start, end, duration) {
+    let startTimestamp = null;
+    const step = (timestamp) => {
+      if (!startTimestamp) startTimestamp = timestamp;
+      const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+      obj.innerHTML = Math.floor(progress * (end - start) + start);
+      if (progress < 1) {
+        window.requestAnimationFrame(step);
+      }
+    };
+    window.requestAnimationFrame(step);
+  }
+//   var statDone = false
+//   if(statDone === false ){
+   
+//   }
 
-
-
+function isNumberKey(evt) {
+    var charCode = 'which' in evt ? evt.which : evt.keyCode;
+    if (charCode > 31 && (charCode < 48 || charCode > 57))
+      return false;
+    // if(evt.target.value.length > 10)
+    //     return false;
+    return true;
+  }
   
-
-
-(function ($){
-window.onload = (event) => {
+  (function ($){
+    window.onload = (event) => {
     var nova = document.getElementById("novanoid");
     nova.classList.add("display-show");
     document.getElementById("dot-1").classList.add("dot-active");
@@ -603,20 +632,35 @@ window.onload = (event) => {
         console.log("header img not change");
     }
     };  
-
+    
 
 
 window.onscroll = function(){
     
-    function isInViewport(element) {
-        const rect = element.getBoundingClientRect();
-        return (
-            rect.top >= 0 &&
-            rect.left >= 0 &&
-            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-        );
+    var stat1 = document.getElementById("clients");
+    var stat2 = document.getElementById("projects");
+    var stat3 = document.getElementById("countries");
+    var stat4 = document.getElementById("offices");
+    
+    if(isInViewport(stat1) === true){
+        // animateValue(stat1, 0, 1642, 3000);
+        stat1.classList.add("client-increase")
     }
+    if(isInViewport(stat2) === true){
+        // animateValue(stat2, 0, 2758, 3000);
+        stat2.classList.add("project-increase")
+    }
+    if(isInViewport(stat3) === true){
+        // animateValue(stat3, 0, 53, 3000);
+        stat3.classList.add("country-increase")
+    }
+    if(isInViewport(stat4) === true){
+        // animateValue(stat4, 0, 3, 3000);
+        stat4.classList.add("office-increase")
+    }
+
+
+    
     
     var feat1 = document.querySelector(" .feat1");
     var feat2 = document.querySelector(" .feat2");
@@ -695,7 +739,6 @@ window.onscroll = function(){
         contact3.classList.add("text-in-fully")
     }
 
-
     var scrollTop = window.pageYOffset;
     console.log(scrollTop);
     var elementNavbar = document.getElementById("nav-bar");
@@ -739,3 +782,99 @@ window.onscroll = function(){
 // document.getElementById("nav-bar").addEventListener("click", () =>{
 //     console.log("Scroll")
 // })
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var overlay1 = document.getElementById("work-overlay-1");
+var img = document.getElementById("img1");
+var modalImg = document.getElementById("img01");
+
+overlay1.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = img.src;
+  console.log(this.src);
+}
+
+var overlay2 = document.getElementById("work-overlay-2");
+var img2 = document.getElementById("img2");
+var modalImg = document.getElementById("img01");
+
+overlay2.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = img2.src;
+}
+
+var overlay3 = document.getElementById("work-overlay-3");
+var img3 = document.getElementById("img3");
+var modalImg = document.getElementById("img01");
+
+overlay3.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = img3.src;
+  console.log(this.src);
+}
+
+var overlay4 = document.getElementById("work-overlay-4");
+var img4 = document.getElementById("img4");
+var modalImg = document.getElementById("img01");
+
+overlay4.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = img4.src;
+}
+
+var overlay5 = document.getElementById("work-overlay-5");
+var img5 = document.getElementById("img5");
+var modalImg = document.getElementById("img01");
+
+overlay5.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = img5.src;
+}
+
+var overlay6 = document.getElementById("work-overlay-6");
+var img6 = document.getElementById("img6");
+var modalImg = document.getElementById("img01");
+
+overlay6.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = img6.src;
+}
+
+var overlay7 = document.getElementById("work-overlay-7");
+var img7 = document.getElementById("img7");
+var modalImg = document.getElementById("img01");
+
+overlay7.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = img7.src;
+}
+
+var overlay8 = document.getElementById("work-overlay-8");
+var img8 = document.getElementById("img8");
+var modalImg = document.getElementById("img01");
+
+overlay8.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = img8.src;
+}
+
+var overlay9 = document.getElementById("work-overlay-9");
+var img9 = document.getElementById("img9");
+var modalImg = document.getElementById("img01");
+
+overlay9.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = img9.src;
+}
+
+
+
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
